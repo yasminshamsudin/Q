@@ -1,0 +1,26 @@
+[MD]
+steps                    100000
+stepsize                  0.2
+temperature               1.0
+bath_coupling             0.2
+random_seed               14
+initial_temperature       1.0
+shake_solute              off
+lrf                       on
+
+[sphere]
+shell_force              10
+shell_radius             0.80
+
+[intervals]
+output                    25
+trajectory                25
+
+[files]
+topology     ../lig.water.top
+final        eq1.re
+fep          ../lig.fep
+trajectory     eq1.dcd
+
+[sequence_restraints]
+1 20 200.0 0 

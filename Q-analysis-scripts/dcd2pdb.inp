@@ -1,0 +1,11 @@
+rl Qoplsaa.lib
+rl heme.lib
+rff Qoplsaa.prm
+rt openstate.water.top
+tr openmd20.dcd
+n
+rf openmd20.dcd
+10001
+wp openmd20_10001.pdb
+y
+q

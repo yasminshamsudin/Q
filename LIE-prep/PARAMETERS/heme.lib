@@ -1,0 +1,799 @@
+*-------------Yasmin 090327---------------------------------
+    {HE2}    !Unprotonated, Fe2+ delocalized -2.0000
+        [info]
+            SYBYLtype  RESIDUE
+        [atoms]
+        	!Pyrrole with one bridge methine
+        	 1 C1A		CN	 0.2500
+        	 2 C2A		CB	-0.1500
+        	 3 C3A		CB	-0.1500
+        	 4 C4A		CN	 0.2500
+        	 5 NA		NA	-0.2000
+        	 6 CHA		CA	-0.1150 !Oplsaa.par
+        	 7 HHA		HA	 0.1150 !Oplsaa.par
+        	 8 CMA		CT	-0.1800 !Oplsaa.par
+        	 9 HMA1		HC	 0.0600 !Oplsaa.par
+        	10 HMA2		HC	 0.0600
+        	11 HMA3		HC	 0.0600	!Ends one ring
+        	12 C1B		CN	 0.2500
+        	13 C2B		CB	-0.1500
+        	14 C3B		CB	-0.1500
+        	15 C4B		CN	 0.2500
+        	16 NB		NA	-0.2000
+        	17 CHB		CA	-0.1150
+        	18 HHB		HA	 0.1150
+        	19 CMB		CT	-0.1800
+        	20 HMB1		HC	 0.0600
+        	21 HMB2		HC	 0.0600
+        	22 HMB3		HC	 0.0600	!Ends one ring
+        	23 C1C		CN	 0.2500
+        	24 C2C		CB	-0.1500
+        	25 C3C		CB	-0.1500
+        	26 C4C		CN	 0.2500
+        	27 NC		NA	-0.2000
+        	28 CHC		CA	-0.1150
+        	29 HHC		HA	 0.1150
+        	30 CMC		CT	-0.1800
+        	31 HMC1		HC	 0.0600
+        	32 HMC2		HC	 0.0600
+        	33 HMC3		HC	 0.0600	!Ends one ring
+        	34 C1D		CN	 0.2500
+        	35 C2D		CB	-0.1500
+        	36 C3D		CB	-0.1500
+        	37 C4D		CN	 0.2500
+        	38 ND		NA	-0.2000
+        	39 CHD		CA	-0.1150
+        	40 HHD		HA	 0.1150
+        	41 CMD		CT	-0.1800
+        	42 HMD1		HC	 0.0600
+        	43 HMD2		HC	 0.0600
+        	44 HMD3		HC	 0.0600	!Ends one ring
+            	45 CAB		CM	-0.1150	!Vinyl groups
+            	46 HAB		HC	 0.1150
+            	47 CBB		CM	-0.2300
+            	48 HBB1		HC	 0.1150
+            	49 HBB2		HC	 0.1150
+		50 CAC		CM	-0.1150
+            	51 HAC		HC	 0.1150
+            	52 CBC		CM	-0.2300
+            	53 HBC1		HC	 0.1150
+            	54 HBC2		HC	 0.1150
+            	55 CAA     	CT      -0.1200	!Carboxylic chain
+	    	56 HAA2    	HC       0.0600
+	    	57 HAA1    	HC          0.0600	
+	    	58 CBA     	CT         -0.2200	
+	    	59 HBA2    	HC          0.0600
+	    	60 HBA1    	HC          0.0600	
+	    	61 CGA     	C           0.7000
+	    	62 O2A     	O2         -0.8000
+	    	63 O1A     	O2         -0.8000	
+            	64 CAD     	CT         -0.1200	
+            	65 HAD2    	HC          0.0600
+	    	66 HAD1    	HC          0.0600	
+	    	67 CBD     	CT         -0.2200	
+	    	68 HBD2    	HC          0.0600
+	    	69 HBD1    	HC          0.0600	
+	    	70 CGD     	C           0.7000
+	    	71 O2D     	O2         -0.8000
+	    	72 O1D     	O2         -0.8000	
+		73 FE		FE	    0.0000
+
+	  [bonds]
+           NA	C1A
+           C1A	C2A
+           C2A	C3A
+           C3A	C4A
+           C4A	NA
+           C1A	CHA
+           CHA	HHA
+           C2A	CAA
+           CAA	HAA1
+           CAA	HAA2
+           CAA	CBA
+           CBA	HBA1
+           CBA	HBA2
+           CBA	CGA
+           CGA	O1A
+           CGA	O2A
+           C3A	CMA
+           CMA	HMA1
+           CMA	HMA2
+           CMA	HMA3
+           C4A	CHB          
+           NB	C1B
+           C1B	C2B
+           C2B	C3B
+           C3B	C4B
+           C4B	NB
+           C1B	CHB
+           CHB	HHB
+           C2B	CMB
+           CMB	HMB1
+           CMB	HMB2
+           CMB	HMB3
+           C3B	CAB
+           CAB	HAB
+           CAB	CBB
+           CBB	HBB1
+           CBB	HBB2
+           C4B	CHC           
+           NC	C1C
+           C1C	C2C
+           C2C	C3C
+           C3C	C4C
+           C4C	NC
+           C1C	CHC
+           CHC	HHC
+           C2C	CMC
+           CMC	HMC1
+           CMC	HMC2
+           CMC	HMC3
+           C3C	CAC
+           CAC	HAC
+           CAC	CBC
+           CBC	HBC1
+           CBC	HBC2
+           C4C	CHD           
+           ND	C1D
+           C1D	C2D
+           C2D	C3D
+           C3D	C4D
+           C4D	ND
+           C1D	CHD
+           CHD	HHD
+           C2D	CMD
+           CMD	HMD1
+           CMD	HMD2
+           CMD	HMD3
+	   C3D	CAD
+           CAD	HAD1
+           CAD	HAD2
+           CAD	CBD
+           CBD	HBD1
+           CBD	HBD2
+           CBD	CGD
+           CGD	O1D
+           CGD	O2D	
+           C4D	CHA
+    
+    	[impropers]
+        NA   C1A  C4A  FE  
+        NB   C1B  C4B  FE  
+        NC   C1C  C4C  FE  
+        ND   C1D  C4D  FE  
+ 	C1A  C2A  NA   CHA 
+ 	C1B  C2B  NB   CHB 
+ 	C1C  C2C  NC   CHC 
+ 	C1D  C2D  ND   CHD 
+ 	C2A  C3A  C1A  CAA 
+ 	C2B  C3B  C1B  CMB 
+ 	C2C  C3C  C1C  CMC 
+ 	C2D  C3D  C1D  CMD 
+ 	C3A  C4A  C2A  CMA 
+ 	C3B  C4B  C2B  CAB 
+ 	C3C  C4C  C2C  CAC 
+ 	C3D  C4D  C2D  CAD 
+ 	C4A  NA   C3A  CHB 
+ 	C4B  NB   C3B  CHC 
+ 	C4C  NC   C3C  CHD 
+ 	C4D  ND   C3D  CHA
+ 
+        [charge_groups]
+        CHA   HHA   C1A   C2A   C3A   C4A   NA  FE 
+        CHB   HHB   C1B   C2B   C3B   C4B   NB   
+        CHC   HHC   C1C   C2C   C3C   C4C   NC   
+        CHD   HHD   C1D   C2D   C3D   C4D   ND   
+        CMA   HMA1  HMA2  HMA3
+        CMB   HMB1  HMB2  HMB3
+        CMC   HMC1  HMC2  HMC3
+        CMD   HMD1  HMD2  HMD3
+        CAA   HAA1  HAA2  CBA   HBA1  HBA2  CGA   O1A   O2A
+        CAD   HAD1  HAD2  CBD   HBD1  HBD2  CGD   O1D   O2D
+        CAB   HAB   CBB   HBB1  HBB2
+        CAC   HAC   CBC   HBC1  HBC2
+*----------------------------------------------------------------------
+    {HEA}    !Singly protonated (A-COOH-chain), Fe2+ delocalized -1.0000
+        [info]
+            SYBYLtype  RESIDUE
+        [atoms]
+        	!Pyrrole with one bridge methine
+        	 1 C1A		CN	 0.2500
+        	 2 C2A		CB	-0.1500
+        	 3 C3A		CB	-0.1500
+        	 4 C4A		CN	 0.2500
+        	 5 NA		NA	-0.2000
+        	 6 CHA		CA	-0.1150 !Oplsaa.par
+        	 7 HHA		HA	 0.1150 !Oplsaa.par
+        	 8 CMA		CT	-0.1800 !Oplsaa.par
+        	 9 HMA1		HC	 0.0600 !Oplsaa.par
+        	10 HMA2		HC	 0.0600
+        	11 HMA3		HC	 0.0600	!Ends one ring
+        	12 C1B		CN	 0.2500
+        	13 C2B		CB	-0.1500
+        	14 C3B		CB	-0.1500
+        	15 C4B		CN	 0.2500
+        	16 NB		NA	-0.2000
+        	17 CHB		CA	-0.1150
+        	18 HHB		HA	 0.1150
+        	19 CMB		CT	-0.1800
+        	20 HMB1		HC	 0.0600
+        	21 HMB2		HC	 0.0600
+        	22 HMB3		HC	 0.0600	!Ends one ring
+        	23 C1C		CN	 0.2500
+        	24 C2C		CB	-0.1500
+        	25 C3C		CB	-0.1500
+        	26 C4C		CN	 0.2500
+        	27 NC		NA	-0.2000
+        	28 CHC		CA	-0.1150
+        	29 HHC		HA	 0.1150
+        	30 CMC		CT	-0.1800
+        	31 HMC1		HC	 0.0600
+        	32 HMC2		HC	 0.0600
+        	33 HMC3		HC	 0.0600	!Ends one ring
+        	34 C1D		CN	 0.2500
+        	35 C2D		CB	-0.1500
+        	36 C3D		CB	-0.1500
+        	37 C4D		CN	 0.2500
+        	38 ND		NA	-0.2000
+        	39 CHD		CA	-0.1150
+        	40 HHD		HA	 0.1150
+        	41 CMD		CT	-0.1800
+        	42 HMD1		HC	 0.0600
+        	43 HMD2		HC	 0.0600
+        	44 HMD3		HC	 0.0600	!Ends one ring
+            	45 CAB		CM	-0.1150	!Vinyl groups
+            	46 HAB		HC	 0.1150
+            	47 CBB		CM	-0.2300
+            	48 HBB1		HC	 0.1150
+            	49 HBB2		HC	 0.1150
+		50 CAC		CM	-0.1150
+            	51 HAC		HC	 0.1150
+            	52 CBC		CM	-0.2300
+            	53 HBC1		HC	 0.1150
+            	54 HBC2		HC	 0.1150
+            	55 CAA     	CT      -0.1200	!Carboxylic chain A
+	    	56 HAA1    	HC       0.0600
+	    	57 HAA2    	HC       0.0600	
+	    	58 CBA     	CT      -0.1200	
+	    	59 HBA1    	HC       0.0600
+	    	60 HBA2    	HC       0.0600	
+	    	61 CGA     	C2       0.5200
+	    	62 O1A     	OH      -0.5300
+        	63 O2A     	O       -0.4400
+        	64 H1A     	HO       0.4500
+            	!Carboxylic chain B
+            	65 CAD     	CT      -0.1200
+            	66 HAD1    	HC       0.0600
+	    	67 HAD2    	HC       0.0600	
+	    	68 CBD     	CT      -0.2200	
+	    	69 HBD1    	HC       0.0600
+	    	70 HBD2    	HC       0.0600	
+	    	71 CGD     	C        0.7000
+	    	72 O2D     	O2      -0.8000
+	    	73 O1D     	O2      -0.8000	
+		74 FE		FE	 0.0000
+
+        [bonds]
+           NA	C1A
+           C1A	C2A
+           C2A	C3A
+           C3A	C4A
+           C4A	NA
+           C1A	CHA
+           CHA	HHA
+           C2A	CAA
+           CAA	HAA1
+           CAA	HAA2
+           CAA	CBA
+           CBA	HBA1
+           CBA	HBA2
+           CBA	CGA
+           CGA	O1A
+           CGA	O2A
+           C3A	CMA
+           CMA	HMA1
+           CMA	HMA2
+           CMA	HMA3
+           C4A	CHB          
+           NB	C1B
+           C1B	C2B
+           C2B	C3B
+           C3B	C4B
+           C4B	NB
+           C1B	CHB
+           CHB	HHB
+           C2B	CMB
+           CMB	HMB1
+           CMB	HMB2
+           CMB	HMB3
+           C3B	CAB
+           CAB	HAB
+           CAB	CBB
+           CBB	HBB1
+           CBB	HBB2
+           C4B	CHC           
+           NC	C1C
+           C1C	C2C
+           C2C	C3C
+           C3C	C4C
+           C4C	NC
+           C1C	CHC
+           CHC	HHC
+           C2C	CMC
+           CMC	HMC1
+           CMC	HMC2
+           CMC	HMC3
+           C3C	CAC
+           CAC	HAC
+           CAC	CBC
+           CBC	HBC1
+           CBC	HBC2
+           C4C	CHD           
+           ND	C1D
+           C1D	C2D
+           C2D	C3D
+           C3D	C4D
+           C4D	ND
+           C1D	CHD
+           CHD	HHD
+           C2D	CMD
+           CMD	HMD1
+           CMD	HMD2
+           CMD	HMD3
+	   C3D	CAD
+           CAD	HAD1
+           CAD	HAD2
+           CAD	CBD
+           CBD	HBD1
+           CBD	HBD2
+           CBD	CGD
+           CGD	O1D
+           CGD	O2D	
+           C4D	CHA
+           O1A	H1A
+
+ [build_rules]  
+       torsion H1A  O1A  CGA  O2A   0
+    
+    	[impropers]
+        NA   C1A  C4A  FE  
+        NB   C1B  C4B  FE  
+        NC   C1C  C4C  FE  
+        ND   C1D  C4D  FE  
+ 	C1A  C2A  NA   CHA 
+ 	C1B  C2B  NB   CHB 
+ 	C1C  C2C  NC   CHC 
+ 	C1D  C2D  ND   CHD 
+ 	C2A  C3A  C1A  CAA 
+ 	C2B  C3B  C1B  CMB 
+ 	C2C  C3C  C1C  CMC 
+ 	C2D  C3D  C1D  CMD 
+ 	C3A  C4A  C2A  CMA 
+ 	C3B  C4B  C2B  CAB 
+ 	C3C  C4C  C2C  CAC 
+ 	C3D  C4D  C2D  CAD 
+ 	C4A  NA   C3A  CHB 
+ 	C4B  NB   C3B  CHC 
+ 	C4C  NC   C3C  CHD 
+ 	C4D  ND   C3D  CHA
+ 
+        [charge_groups]
+        CHA   HHA   C1A   C2A   C3A   C4A   NA  FE   
+        CHB   HHB   C1B   C2B   C3B   C4B   NB   
+        CHC   HHC   C1C   C2C   C3C   C4C   NC   
+        CHD   HHD   C1D   C2D   C3D   C4D   ND   
+        CMA   HMA1  HMA2  HMA3
+        CMB   HMB1  HMB2  HMB3
+        CMC   HMC1  HMC2  HMC3
+        CMD   HMD1  HMD2  HMD3
+        CAA   HAA1  HAA2  CBA   HBA1  HBA2  CGA   O1A   O2A   H1A
+        CAD   HAD1  HAD2  CBD   HBD1  HBD2  CGD   O1D   O2D
+        CAB   HAB   CBB   HBB1  HBB2
+        CAC   HAC   CBC   HBC1  HBC2
+*----------------------------------------------------------------------
+    {HED}    !Singly protonated (D-COOH-chain) Fe2+ delocalized -1.0000
+        [info]
+            SYBYLtype  RESIDUE
+        [atoms]
+        	!Pyrrole with one bridge methine
+        	 1 C1A		CN	 0.2500
+        	 2 C2A		CB	-0.1500
+        	 3 C3A		CB	-0.1500
+        	 4 C4A		CN	 0.2500
+        	 5 NA		NA	-0.2000
+        	 6 CHA		CA	-0.1150 !Oplsaa.par
+        	 7 HHA		HA	 0.1150 !Oplsaa.par
+        	 8 CMA		CT	-0.1800 !Oplsaa.par
+        	 9 HMA1		HC	 0.0600 !Oplsaa.par
+        	10 HMA2		HC	 0.0600
+        	11 HMA3		HC	 0.0600	!Ends one ring
+        	12 C1B		CN	 0.2500
+        	13 C2B		CB	-0.1500
+        	14 C3B		CB	-0.1500
+        	15 C4B		CN	 0.2500
+        	16 NB		NA	-0.2000
+        	17 CHB		CA	-0.1150
+        	18 HHB		HA	 0.1150
+        	19 CMB		CT	-0.1800
+        	20 HMB1		HC	 0.0600
+        	21 HMB2		HC	 0.0600
+        	22 HMB3		HC	 0.0600	!Ends one ring
+        	23 C1C		CN	 0.2500
+        	24 C2C		CB	-0.1500
+        	25 C3C		CB	-0.1500
+        	26 C4C		CN	 0.2500
+        	27 NC		NA	-0.2000
+        	28 CHC		CA	-0.1150
+        	29 HHC		HA	 0.1150
+        	30 CMC		CT	-0.1800
+        	31 HMC1		HC	 0.0600
+        	32 HMC2		HC	 0.0600
+        	33 HMC3		HC	 0.0600	!Ends one ring
+        	34 C1D		CN	 0.2500
+        	35 C2D		CB	-0.1500
+        	36 C3D		CB	-0.1500
+        	37 C4D		CN	 0.2500
+        	38 ND		NA	-0.2000
+        	39 CHD		CA	-0.1150
+        	40 HHD		HA	 0.1150
+        	41 CMD		CT	-0.1800
+        	42 HMD1		HC	 0.0600
+        	43 HMD2		HC	 0.0600
+        	44 HMD3		HC	 0.0600	!Ends one ring
+       	    	!Vinyl groups
+            	45 CAB		CM	-0.1150
+            	46 HAB		HC	 0.1150
+            	47 CBB		CM	-0.2300
+            	48 HBB1		HC	 0.1150
+            	49 HBB2		HC	 0.1150
+		50 CAC		CM	-0.1150
+            	51 HAC		HC	 0.1150
+            	52 CBC		CM	-0.2300
+            	53 HBC1		HC	 0.1150
+            	54 HBC2		HC	 0.1150
+            	!Carboxylic chain
+            	55 CAA     	CT         -0.1200	
+	    	56 HAA1    	HC          0.0600
+	    	57 HAA2    	HC          0.0600	
+	    	58 CBA     	CT         -0.2200	
+	    	59 HBA1    	HC          0.0600
+	    	60 HBA2    	HC          0.0600	
+	    	61 CGA     	C           0.7000
+	    	62 O2A     	O2         -0.8000
+	    	63 O1A     	O2         -0.8000	
+            	64 CAD     	CT         -0.1200	
+            	65 HAD1    	HC          0.0600
+	    	66 HAD2    	HC          0.0600	
+	    	67 CBD     	CT         -0.1200	
+	    	68 HBD1    	HC          0.0600
+	    	69 HBD2    	HC          0.0600	
+	    	70 CGD     	C2          0.5200
+	    	71 O1D     	OH         -0.5300
+        	72 O2D     	O          -0.4400
+        	73 H1D     	HO          0.4500	
+		74 FE		FE	    0.0000
+
+        [bonds]
+           NA	C1A
+           C1A	C2A
+           C2A	C3A
+           C3A	C4A
+           C4A	NA
+           C1A	CHA
+           CHA	HHA
+           C2A	CAA
+           CAA	HAA1
+           CAA	HAA2
+           CAA	CBA
+           CBA	HBA1
+           CBA	HBA2
+           CBA	CGA
+           CGA	O1A
+           CGA	O2A
+           C3A	CMA
+           CMA	HMA1
+           CMA	HMA2
+           CMA	HMA3
+           C4A	CHB          
+           NB	C1B
+           C1B	C2B
+           C2B	C3B
+           C3B	C4B
+           C4B	NB
+           C1B	CHB
+           CHB	HHB
+           C2B	CMB
+           CMB	HMB1
+           CMB	HMB2
+           CMB	HMB3
+           C3B	CAB
+           CAB	HAB
+           CAB	CBB
+           CBB	HBB1
+           CBB	HBB2
+           C4B	CHC           
+           NC	C1C
+           C1C	C2C
+           C2C	C3C
+           C3C	C4C
+           C4C	NC
+           C1C	CHC
+           CHC	HHC
+           C2C	CMC
+           CMC	HMC1
+           CMC	HMC2
+           CMC	HMC3
+           C3C	CAC
+           CAC	HAC
+           CAC	CBC
+           CBC	HBC1
+           CBC	HBC2
+           C4C	CHD           
+           ND	C1D
+           C1D	C2D
+           C2D	C3D
+           C3D	C4D
+           C4D	ND
+           C1D	CHD
+           CHD	HHD
+           C2D	CMD
+           CMD	HMD1
+           CMD	HMD2
+           CMD	HMD3
+	   C3D	CAD
+           CAD	HAD1
+           CAD	HAD2
+           CAD	CBD
+           CBD	HBD1
+           CBD	HBD2
+           CBD	CGD
+           CGD	O1D
+           CGD	O2D	
+           C4D	CHA
+           O2D  H1D
+
+ [build_rules]  
+       torsion H1D  O1D  CGD  O2D   0
+    
+    	[impropers]
+        NA   C1A  C4A  FE  
+        NB   C1B  C4B  FE  
+        NC   C1C  C4C  FE  
+        ND   C1D  C4D  FE  
+ 	C1A  C2A  NA   CHA 
+ 	C1B  C2B  NB   CHB 
+ 	C1C  C2C  NC   CHC 
+ 	C1D  C2D  ND   CHD 
+ 	C2A  C3A  C1A  CAA 
+ 	C2B  C3B  C1B  CMB 
+ 	C2C  C3C  C1C  CMC 
+ 	C2D  C3D  C1D  CMD 
+ 	C3A  C4A  C2A  CMA 
+ 	C3B  C4B  C2B  CAB 
+ 	C3C  C4C  C2C  CAC 
+ 	C3D  C4D  C2D  CAD 
+ 	C4A  NA   C3A  CHB 
+ 	C4B  NB   C3B  CHC 
+ 	C4C  NC   C3C  CHD 
+ 	C4D  ND   C3D  CHA
+ 
+        [charge_groups]
+        CHA   HHA   C1A   C2A   C3A   C4A   NA  FE   
+        CHB   HHB   C1B   C2B   C3B   C4B   NB   
+        CHC   HHC   C1C   C2C   C3C   C4C   NC   
+        CHD   HHD   C1D   C2D   C3D   C4D   ND   
+        CMA   HMA1  HMA2  HMA3
+        CMB   HMB1  HMB2  HMB3
+        CMC   HMC1  HMC2  HMC3
+        CMD   HMD1  HMD2  HMD3
+        CAA   HAA1  HAA2  CBA   HBA1  HBA2  CGA   O1A   O2A
+        CAD   HAD1  HAD2  CBD   HBD1  HBD2  CGD   O1D   O2D  H1D
+        CAB   HAB   CBB   HBB1  HBB2
+        CAC   HAC   CBC   HBC1  HBC2
+*----------------------------------------------------------------------
+    {HEM}    !Fully protonated, Fe2+ delocalized NEUTRAL!!!
+        [info]
+            SYBYLtype  RESIDUE
+        [atoms]
+        	!Pyrrole with one bridge methine
+        	 1 C1A		CN	 0.2500
+        	 2 C2A		CB	-0.1500
+        	 3 C3A		CB	-0.1500
+        	 4 C4A		CN	 0.2500
+        	 5 NA		NA	-0.2000
+        	 6 CHA		CA	-0.1150 !Oplsaa.par
+        	 7 HHA		HA	 0.1150 !Oplsaa.par
+        	 8 CMA		CT	-0.1800 !Oplsaa.par
+        	 9 HMA1		HC	 0.0600 !Oplsaa.par
+        	10 HMA2		HC	 0.0600
+        	11 HMA3		HC	 0.0600	!Ends one ring
+        	12 C1B		CN	 0.2500
+        	13 C2B		CB	-0.1500
+        	14 C3B		CB	-0.1500
+        	15 C4B		CN	 0.2500
+        	16 NB		NA	-0.2000
+        	17 CHB		CA	-0.1150
+        	18 HHB		HA	 0.1150
+        	19 CMB		CT	-0.1800
+        	20 HMB1		HC	 0.0600
+        	21 HMB2		HC	 0.0600
+        	22 HMB3		HC	 0.0600	!Ends one ring
+        	23 C1C		CN	 0.2500
+        	24 C2C		CB	-0.1500
+        	25 C3C		CB	-0.1500
+        	26 C4C		CN	 0.2500
+        	27 NC		NA	-0.2000
+        	28 CHC		CA	-0.1150
+        	29 HHC		HA	 0.1150
+        	30 CMC		CT	-0.1800
+        	31 HMC1		HC	 0.0600
+        	32 HMC2		HC	 0.0600
+        	33 HMC3		HC	 0.0600	!Ends one ring
+        	34 C1D		CN	 0.2500
+        	35 C2D		CB	-0.1500
+        	36 C3D		CB	-0.1500
+        	37 C4D		CN	 0.2500
+        	38 ND		NA	-0.2000
+        	39 CHD		CA	-0.1150
+        	40 HHD		HA	 0.1150
+        	41 CMD		CT	-0.1800
+        	42 HMD1		HC	 0.0600
+        	43 HMD2		HC	 0.0600
+        	44 HMD3		HC	 0.0600	!Ends one ring
+       	    	!Vinyl groups
+            	45 CAB		CM	-0.1150
+            	46 HAB		HC	 0.1150
+            	47 CBB		CM	-0.2300
+            	48 HBB1		HC	 0.1150
+            	49 HBB2		HC	 0.1150
+		50 CAC		CM	-0.1150
+            	51 HAC		HC	 0.1150
+            	52 CBC		CM	-0.2300
+            	53 HBC1		HC	 0.1150
+            	54 HBC2		HC	 0.1150
+            	!Carboxylic chain A
+            	55 CAA     	CT         -0.1200	
+	    	56 HAA2    	HC          0.0600
+	    	57 HAA1    	HC          0.0600	
+	    	58 CBA     	CT         -0.1200	
+	    	59 HBA2    	HC          0.0600
+	    	60 HBA1    	HC          0.0600	
+	    	61 CGA     	C2          0.5200
+		62 O1A     	OH         -0.5300
+		63 O2A     	O          -0.4400
+		64 H1A     	HO          0.4500
+		!Carboxylic chain D
+		65 CAD     	CT         -0.1200
+		66 HAD1    	HC          0.0600
+	    	67 HAD2    	HC          0.0600	
+	    	68 CBD     	CT         -0.1200	
+		69 HBD1    	HC          0.0600
+		70 HBD2    	HC          0.0600	
+		71 CGD     	C2          0.5200
+		72 O1D     	OH         -0.5300
+		73 O2D     	O          -0.4400
+        	74 H1D     	HO          0.4500	
+		75 FE		FE	    0.0000        
+
+	[bonds]
+           NA	C1A
+           C1A	C2A
+           C2A	C3A
+           C3A	C4A
+           C4A	NA
+           C1A	CHA
+           CHA	HHA
+           C2A	CAA
+           CAA	HAA1
+           CAA	HAA2
+           CAA	CBA
+           CBA	HBA1
+           CBA	HBA2
+           CBA	CGA
+           CGA	O1A
+           CGA	O2A
+           C3A	CMA
+           CMA	HMA1
+           CMA	HMA2
+           CMA	HMA3
+           C4A	CHB          
+           NB	C1B
+           C1B	C2B
+           C2B	C3B
+           C3B	C4B
+           C4B	NB
+           C1B	CHB
+           CHB	HHB
+           C2B	CMB
+           CMB	HMB1
+           CMB	HMB2
+           CMB	HMB3
+           C3B	CAB
+           CAB	HAB
+           CAB	CBB
+           CBB	HBB1
+           CBB	HBB2
+           C4B	CHC           
+           NC	C1C
+           C1C	C2C
+           C2C	C3C
+           C3C	C4C
+           C4C	NC
+           C1C	CHC
+           CHC	HHC
+           C2C	CMC
+           CMC	HMC1
+           CMC	HMC2
+           CMC	HMC3
+           C3C	CAC
+           CAC	HAC
+           CAC	CBC
+           CBC	HBC1
+           CBC	HBC2
+           C4C	CHD           
+           ND	C1D
+           C1D	C2D
+           C2D	C3D
+           C3D	C4D
+           C4D	ND
+           C1D	CHD
+           CHD	HHD
+           C2D	CMD
+           CMD	HMD1
+           CMD	HMD2
+           CMD	HMD3
+	   C3D	CAD
+           CAD	HAD1
+           CAD	HAD2
+           CAD	CBD
+           CBD	HBD1
+           CBD	HBD2
+           CBD	CGD
+           CGD	O1D
+           CGD	O2D	
+           C4D	CHA
+           O1A  H1A
+           O1D  H1D
+
+ [build_rules]
+       torsion H1A  O1A  CGA  O2A   0
+       torsion H1D  O1D  CGD  O2D   0
+    
+    	[impropers]
+	NA   C1A  C4A  FE  
+	NB   C1B  C4B  FE  
+	NC   C1C  C4C  FE  
+	ND   C1D  C4D  FE  
+ 	C1A  C2A  NA   CHA 
+ 	C1B  C2B  NB   CHB 
+ 	C1C  C2C  NC   CHC 
+ 	C1D  C2D  ND   CHD 
+ 	C2A  C3A  C1A  CAA 
+ 	C2B  C3B  C1B  CMB 
+ 	C2C  C3C  C1C  CMC 
+ 	C2D  C3D  C1D  CMD 
+ 	C3A  C4A  C2A  CMA 
+ 	C3B  C4B  C2B  CAB 
+ 	C3C  C4C  C2C  CAC 
+ 	C3D  C4D  C2D  CAD 
+ 	C4A  NA   C3A  CHB 
+ 	C4B  NB   C3B  CHC 
+ 	C4C  NC   C3C  CHD 
+ 	C4D  ND   C3D  CHA
+        O1A  CGA  CBA  O2A
+        O1D  CGD  CBD  O2D
+ 
+        [charge_groups]
+        CHA   HHA   C1A   C2A   C3A   C4A   NA   FE
+        CHB   HHB   C1B   C2B   C3B   C4B   NB   
+        CHC   HHC   C1C   C2C   C3C   C4C   NC   
+        CHD   HHD   C1D   C2D   C3D   C4D   ND   
+        CMA   HMA1  HMA2  HMA3
+        CMB   HMB1  HMB2  HMB3
+        CMC   HMC1  HMC2  HMC3
+        CMD   HMD1  HMD2  HMD3
+        CAA   HAA1  HAA2  CBA   HBA1  HBA2  CGA   O1A   O2A  H1A
+        CAD   HAD1  HAD2  CBD   HBD1  HBD2  CGD   O1D   O2D  H1D
+        CAB   HAB   CBB   HBB1  HBB2
+        CAC   HAC   CBC   HBC1  HBC2
+*----------------------------------------------------------------------

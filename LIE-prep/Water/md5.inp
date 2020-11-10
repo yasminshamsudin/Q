@@ -1,0 +1,39 @@
+[MD]
+steps                   50000
+stepsize                  2.00
+temperature             298.0
+bath_coupling           100
+shake_solvent            on
+shake_solute             on
+lrf                      on
+
+[cut_offs]
+solute_solute            10
+solute_solvent           10
+solvent_solvent          10
+q_atom                   99
+lrf                      99
+
+[sphere]
+shell_force              10
+shell_radius           0.83
+
+[intervals]
+non_bond                 25
+output                   25
+energy                   25
+trajectory             1000
+
+[trajectory_atoms]
+not excluded
+
+[files]
+topology       ../lig.water.top
+final          md5.re
+energy         md5.en
+restart        md4.re
+fep            ../lig.fep
+trajectory     md5.dcd
+
+[sequence_restraints]
+1 20 10 1 2

@@ -1,0 +1,112 @@
+
+*-----------------------------------------------------------------------
+[bonds] bond type definitions
+*iaci iacj	force.c.	dist.	SYBYL
+*-----------------------------------------------------------------------
+CA	NT	962.0	1.34	!anilines
+OS	C2	600.0	1.55
+CT	OS	640.0	1.410
+P	O2	1050.0	1.480
+P	OS	630.0	1.610
+HW	OW	1106.0	0.957
+!HW	HW	1106.0	1.514
+HW	HW	0.0	1.5183
+H	N	868.0	1.010
+H	NA	868.0	1.010
+H3	N2	868.0	1.010
+H3	N3	868.0	1.010
+Cstar	CB	776.0	1.459
+Cstar	CT	634.0	1.495
+Cstar	CW	1092.0	1.352
+C	CT	634.0	1.522
+C2	CT	634.0	1.522
+C21	CT	634.0	1.522
+C	N	980.0	1.335
+C	O	1140.0	1.229
+C2	N	980.0	1.335
+C21	N	980.0	1.335   !GLN
+C2	O	1140.0	1.229
+C2	O1	1140.0	1.229   !ASH
+C21	O	1140.0	1.229   !GLN
+C	OA	1140.0	1.229	!GLN/ASN
+C	O2	1312.0	1.250
+C2	O2	1312.0	1.250
+C	OH	900.0	1.364
+C2	OH	900.0	1.364
+C2	ODE	900.0	1.364
+CA	CA	938.0	1.400
+CA	CAr	938.0	1.400
+CA	CB	938.0	1.404
+CA	CT	634.0	1.510
+CA	HA	734.0	1.080	
+CA	N2	962.0	1.340
+CAr	N2	962.0	1.340
+CA	OH	900.0	1.364
+CA	OTY	900.0	1.364
+CN	CA	938.0	1.400
+CN	CB	894.0	1.419
+CN	NA	856.0	1.380
+CR	HA	734.0	1.080
+CR	NA	954.0	1.343
+CR	NB	976.0	1.335
+CT	CT	536.0	1.529
+CT	N	674.0	1.449
+CT	N2	674.0	1.463
+CT	N3	734.0	1.471
+CT	OH	640.0	1.410
+CT	S	454.0	1.810
+CT	SH	444.0	1.810
+CP1	CT	536.0	1.529
+CP1	N	674.0	1.449
+CP1	HC	680.0	1.090
+CV	CT	634.0	1.504
+CV	CW	1040.0	1.370
+CV	HA	734.0	1.080
+CV	NB	820.0	1.394
+CW	CT	634.0	1.504
+CW	HA	734.0	1.080
+CW	NA	854.0	1.381
+CT	CX	634.0	1.504
+CX	NA	854.0	1.381
+CX	HA	734.0	1.080
+CX	CX	1040.0	1.370
+HC	CT	680.0	1.090
+HC1     CT      680.0	1.090  ! GLU: HB1 and HB2
+HC2     CT      680.0	1.090  ! GLN: HB1 and HB2
+HO	OH	1106.0	0.945
+HO	OTY	1106.0	0.945
+HO	ODE	1106.0	0.945
+HS	SH	548.0	1.336
+S	S	332.0	2.038
+NT	H	868.0	1.010
+NY	H2	868.0	1.010
+NY	H	868.0	1.010
+NZ	H	868.0	1.010
+CT	NY	764.0	1.448
+CA	NY	764.0	1.448
+CA	NZ	1000.0	1.261
+CAr	NY	764.0	1.448
+CAr	NZ	1000.0	1.261
+CT	NT	764.0	1.448
+CA	N3	962.0	1.340	!Aniline
+
+! HEM Bonds- Yasmin from Almöf
+
+FE      NA         100.000   2.010  ! amber heme
+FE      NB         100.000   2.010  ! amber heme
+S       FE         140.000   2.200  ! HEME from amber www and 2cpp.pdb  united atom heme
+NA      CN         732.000   1.384  ! amber heme www
+NB      CN         732.000   1.384  ! amber heme www
+CB      CB         836.000   1.357  ! amber heme www
+CB      CT         594.000   1.501  ! amber heme www
+CM      HC         680.000   1.080  ! oplsaa.sb
+CM      CM        1098.000   1.340  ! oplsaa.sb
+CB      CM         854.000   1.433  ! oplsaa.sb
+Cket    OA        1140.000   1.229  !GLN/ASN
+Cket    O2        1312.000   1.250
+Cket    OH         900.000   1.364
+Cket    CT         634.000   1.522
+Cket    N          980.000   1.335
+Cket    O         1140.000   1.229
+S       FE         140.000   2.200  ! HEME from amber www and 2cpp.pdb  united atom heme
+

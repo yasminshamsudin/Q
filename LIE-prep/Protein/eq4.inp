@@ -1,0 +1,41 @@
+[MD]
+steps                  700000
+stepsize                  2
+temperature             298.0
+bath_coupling            50
+random_seed              40
+initial_temperature     298
+shake_solvent            on
+shake_solute             on
+separate_scaling         on
+lrf                      on
+
+[cut_offs]
+solute_solute            10
+solute_solvent           10
+solvent_solvent          10
+q_atom                   99
+lrf                      99
+
+[sphere]
+shell_force              10
+shell_radius           0.83
+
+[trajectory_atoms]
+not excluded
+
+[intervals]
+non_bond                25
+output                  25
+energy                    0
+trajectory            17500
+
+[files]
+topology       ../LIG.protein.top
+final          eq4.re
+restart        eq3.re
+fep            ../LIG.fep
+trajectory     eq4.dcd
+
+[sequence_restraints]
+1 8911 15.0 1

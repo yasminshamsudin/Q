@@ -1,0 +1,75 @@
+
+*-----------------------------------------------------------------------
+[impropers] improper type definitions
+*taci	tacj	tack	tacl	forceK	phase
+*-----------------------------------------------------------------
+N2	CAr	N2	N2	10.5	180.000	!160
+CA	CAr	N2	N2	10.5	180.000	!160
+NY	CAr	NZ	NY	10.5	180.000	!160
+O	C	CT	N	10.5	180.000	!160
+O	C2	CT	N	10.5	180.000	!160
+O	C21	CT	N	10.5	180.000	!160 GLN
+O	C	CT	OH	10.5	180.000	!160
+O	C	CT	N	10.5	180.000	!160
+O2	C	CT	O2	10.5	180.000	!160
+O2	C2	CT	O2	10.5	180.000	!160
+OH	C2	CT	O	10.5	180.000	!160
+OH	C2	CT	O1	10.5	180.000	!160 ASH
+ODE	C2	CT	O	10.5	180.000	!160
+CT	N	C	CT	1	180.000	!161
+H	N	C	CT	1	180.000	!161
+CT	N	C	CP1	1	180.000 !161 PRO
+H	N	C	H	1	180.000	!161
+H	N	C2	H	1	180.000	!161
+H	N	C21	H	1	180.000	!161 GLN
+H	NA	CA	CX	1	180.000	!161
+H	NA	CR	CW	1	180.000	!161
+H	NA	CW	CN	1	180.000	!161
+H	NA	CW	CR	1	180.000	!161
+H	NA	CX	CA	1	180.000	!161
+H	NA	CR	CX	1	180.000	!161
+H	NA	CX	CR	1	180.000	!161
+H3	N2	CA	H3	1	180.000	!161
+H3	N2	CAr	H3	1	180.000	!161
+H	NY	CA	H	1	180.000	!161
+H	NY	CAr	H	1	180.000	!161
+H3	N2	CT	CA	1	180.000	!161
+H3	N2	CT	CAr	1	180.000	!161
+H	NY	CT	CA	1	180.000	!161
+H	NY	CT	CAr	1	180.000	!161
+CA	CN	CB	NA	1.1	180.000	!162
+CN	CB	CA	Cstar	1.1	180.000	!162
+CT	CA	CA	CA	1.1	180.000	!162
+CA	CA	N3	CA	1.1	180.000 ! Aniline
+CT	Cstar	CW	CB	1.1	180.000	!162
+CT	CV	NB	CW	1.1	180.000	!162
+CT	CW	NA	CA	1.1	180.000	!162
+CT	CW	NA	CV	1.1	180.000	!162
+CT	CX	NA	CX	1.1	180.000	!162
+HA	CA	CA	CA	1.1	180.000	!162
+HA	CA	CA	CB	1.1	180.000	!162
+HA	CA	CN	CA	1.1	180.000	!162
+HA	CR	NA	NA	1.1	180.000	!162
+HA	CR	NA	NB	1.1	180.000	!162
+HA	CR	NB	NA	1.1	180.000	!162
+HA	CV	NB	CW	1.1	180.000	!162
+HA	CW	Cstar	NA	1.1	180.000	!162
+HA	CW	NA	CV	1.1	180.000	!162
+HA	CX	NA	CX	1.1	180.000	!162
+OH	CA	CA	CA	1.1	180.000	!162
+OTY	CA	CA	CA	1.1	180.000	!162
+CA	CA	NT	CA	1.1	180.000 ! Aniline (neutral)
+
+! HEM Impropers- Yasmin from Almlöf
+
+NA      CN      CN      FE      1.1     180.000 !heme
+NB      CN      CN      FE      1.1     180.000 !heme
+CN      CB      NB      CA      1.1     180.000 !heme
+CB      CB      CN      CT      1.1     180.000 !heme
+CB      CN      CB      CT      1.1     180.000 !heme
+CB      CN      CB      CM      1.1     180.000 !heme
+CN      NB      CB      CA      1.1     180.000 !heme
+O       Cket    CT      CT      10.5    180.000 !160
+
+! Ligand Impropers
+

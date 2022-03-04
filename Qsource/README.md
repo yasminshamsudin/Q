@@ -1,6 +1,6 @@
 qsource
 =======
-Version control of the molecular dynamics code called Q, version 5, via github.
+Version control of the molecular dynamics code called Q, version 5.06, via github.
 
 Q is a set of Molecular Dynamics (MD) tools tailored to specific kinds of free energy calculations, mainly:
 
@@ -85,6 +85,7 @@ Qprep>
 
 NOTES:
 =========
+2022-03-04: This is version 5.06 of the software Q developed in the Åqvist group. For newer versions, see the Quser repository. 
 
 10/02/2014
 

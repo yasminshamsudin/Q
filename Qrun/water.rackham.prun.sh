@@ -57,7 +57,7 @@ for seed in {1..5}
         echo -e "#SBATCH -N 1 -n 16" >> $date.$ligname.job
         echo -e "#SBATCH -A $projname" >> $date.$ligname.job
         echo -e "#SBATCH -t $walltime:00:00" >> $date.$ligname.job
-        echo -e "#SBATCH -J $ligname-$protein"'\n' >> $date.$ligname.job
+        echo -e "#SBATCH -J $ligname-TIP3P"'\n' >> $date.$ligname.job
 
         echo -e "module load intel/17.2 openmpi/2.1.0"'\n' >> $date.$ligname.job
         echo -e "$mpi $qdyn5p eq1.inp > eq1.log" >> $date.$ligname.job

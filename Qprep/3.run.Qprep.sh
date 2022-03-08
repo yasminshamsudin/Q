@@ -10,7 +10,7 @@
 
 # date=140212i
  date=$( date +%y%m%d)
- protein=Q.TEM1     # Give protein name
+ protein=TEM1     # Give protein name
  radius=30.0        # Set radius of sphere
  boundary=30.3      # Set water boundary (0.3 beyond simulation sphere)
 
@@ -29,24 +29,24 @@ for i in *.mae
   mkdir $date.$protein
 # Create maketop-files
 
- echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.water.top'\n'wp $ligname.water.top.pdb y'\n'quit > $ligname.water.maketop.inp
+ echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.CM1A.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.CM1A.water.top'\n'wp $ligname.CM1A.water.top.pdb y'\n'quit > $ligname.CM1A.water.maketop.inp
+ echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.O5.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.O5.water.top'\n'wp $ligname.O5.water.top.pdb y'\n'quit > $ligname.O5.water.maketop.inp
 
- echo -e rff $ligname.prm'\n'rt $ligname.water.top'\n'boundary sphere $x $y $z $radius'\n'ma none'\n'ma not excluded'\n'mt $ligname $protein $radius A'\n'wp $ligname.water.dcd_top.pdb y'\n'quit > $ligname.make.water.dcd.top.inp
+ echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.CM1A.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.complex.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.CM1A.protein.top'\n'wp $ligname.CM1A.protein.top.pdb y'\n'quit > $ligname.CM1A.protein.maketop.inp
+ echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.O5.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.complex.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.O5.protein.top'\n'wp $ligname.O5.protein.top.pdb y'\n'quit > $ligname.O5.protein.maketop.inp
 
- echo -e rl PARAMETERS/Qoplsaa.lib'\n'rl Q.$ligname.lib'\n'rff Q.$ligname.prm'\n'rp Q.$ligname.complex.pdb'\n'boundary sphere $x $y $z $radius'\n'solvate boundary $boundary 1 HOH'\n'mt $ligname $protein $radius A'\n'wt $ligname.protein.top'\n'wp $ligname.protein.top.pdb y'\n'quit > $ligname.protein.maketop.inp
-
- echo -e rff $ligname.prm'\n'rt $ligname.protein.top'\n'boundary sphere $x $y $z $radius'\n'ma none'\n'ma not excluded'\n'mt $ligname $protein $radius A'\n'wp $ligname.protein.dcd_top.pdb y'\n'quit > $ligname.make.protein.dcd.top.inp
+ echo -e rff $ligname.prm'\n'rt $ligname.CM1A.protein.top'\n'boundary sphere $x $y $z $radius'\n'ma none'\n'ma not excluded'\n'mt $ligname $protein $radius A'\n'wp $ligname.$protein.dcd_top.pdb y'\n'quit > $ligname.CM1A.make.protein.dcd.top.inp
+ echo -e rff $ligname.prm'\n'rt $ligname.O5.protein.top'\n'boundary sphere $x $y $z $radius'\n'ma none'\n'ma not excluded'\n'mt $ligname $protein $radius A'\n'wp $ligname.$protein.dcd_top.pdb y'\n'quit > $ligname.O5.make.protein.dcd.top.inp
 
 # Run Qprep5
 
- qprep5 < $ligname.water.maketop.inp > $ligname.water.top.log
- wait
- qprep5 < $ligname.make.water.dcd.top.inp > $ligname.make.water.dcd.top.log
- wait
- qprep5 < $ligname.protein.maketop.inp > $ligname.protein.top.log
- wait
- qprep5 < $ligname.make.protein.dcd.top.inp > $ligname.make.protein.dcd.top.log
- wait
+ qprep5 < $ligname.CM1A.water.maketop.inp > $ligname.CM1A.water.top.log
+ qprep5 < $ligname.CM1A.protein.maketop.inp > $ligname.CM1A.protein.top.log
+ qprep5 < $ligname.CM1A.make.protein.dcd.top.inp > $ligname.CM1A.make.protein.dcd.top.log
+
+ qprep5 < $ligname.O5.water.maketop.inp > $ligname.O5.water.top.log
+ qprep5 < $ligname.O5.protein.maketop.inp > $ligname.O5.protein.top.log
+ qprep5 < $ligname.O5.make.protein.dcd.top.inp > $ligname.O5.make.protein.dcd.top.log
 
 # Clean up the folder
 

@@ -9,55 +9,58 @@
 # 3. Download the Q-files (prm and lib) to the current directory and rename them properly
 # 4. Run this script (only edit the ligand name below)
 
-# Set the ligand name
-
- 	ligname=AVB1
+# 2022-03-08 Edited to automatically run for all LigParGen-generated .prm files.
 
 ################ No More Editing !!! ##########################
 
-# MERGE the Ligand and Protein parameter files
+for i in *.prm
+   	do
+    	ligname=$( echo "$i" | sed -e 's/\.prm//g')
 
-	# Break up the sections
-	sed -n -r '/atom_types/,/^\s*$/p' $ligname.prm > X.vdw.tmp
-	sed -n -r '/bonds/,/^\s*$/p' $ligname.prm > X.bond.tmp
-	sed -n -r '/angles/,/^\s*$/p' $ligname.prm > X.angle.tmp
-	sed -n -r '/torsions/,/^\s*$/p' $ligname.prm > X.torsion.tmp
-	sed -n -r '/impropers/,/^\s*$/p' $ligname.prm > X.improperprim.tmp
-    awk '{print $1, $2, $3, $4, $5, $7}' X.improperprim.tmp > X.improper.tmp
-	
-	# Clean up all sections
-	sed -i '1d;$d' *.tmp 		# Remove first line + last (empty) line
+		# MERGE the Ligand and Protein parameter files
 
-	# CAT all parameter files to one
-	cat PARAMETERS/Qoplsaa.HEM.vdw.prm X.vdw.tmp PARAMETERS/Qoplsaa.HEM.bond.prm X.bond.tmp PARAMETERS/Qoplsaa.HEM.angle.prm X.angle.tmp PARAMETERS/Qoplsaa.HEM.torsion.prm X.torsion.tmp PARAMETERS/Qoplsaa.HEM.improper.prm X.improper.tmp > Q.$ligname.prm 
+		# Break up the sections
+		sed -n -r '/atom_types/,/^\s*$/p' $ligname.prm > X.vdw.tmp
+		sed -n -r '/bonds/,/^\s*$/p' $ligname.prm > X.bond.tmp
+		sed -n -r '/angles/,/^\s*$/p' $ligname.prm > X.angle.tmp
+		sed -n -r '/torsions/,/^\s*$/p' $ligname.prm > X.torsion.tmp
+		sed -n -r '/impropers/,/^\s*$/p' $ligname.prm > X.improperprim.tmp
+		awk '{print $1, $2, $3, $4, $5, $7}' X.improperprim.tmp > X.improper.tmp
 
-# EDIT the LIB-file
+		# Clean up all sections
+		sed -i '1d;$d' *.tmp 		# Remove first line + last (empty) line
 
-	# Get main content
-    sed -n -r '/atoms/,//p' $ligname.lib > mainlib.tmp
+		# CAT all parameter files to one
+		cat PARAMETERS/Qoplsaa.HEM.vdw.prm X.vdw.tmp PARAMETERS/Qoplsaa.HEM.bond.prm X.bond.tmp PARAMETERS/Qoplsaa.HEM.angle.prm X.angle.tmp PARAMETERS/Qoplsaa.HEM.torsion.prm X.torsion.tmp PARAMETERS/Qoplsaa.HEM.improper.prm X.improper.tmp > Q.$ligname.prm 
 
-    # Calculate the total charge
-    sed -n -r '/atoms/,/bonds/p' $ligname.lib > charges.tmp
-	awk '{total += $NF} END {print total}' charges.tmp > charge.tmp
-    charge=$( tail charge.tmp)
+		# EDIT the LIB-file
 
-    # Put it together
-	echo -e *----------------'\n'{LIG}	! charge: $charge'\n' > libheader.tmp
-	cat libheader.tmp mainlib.tmp > Q.$ligname.lib
+		# Get main content
+		sed -n -r '/atoms/,//p' $ligname.lib > mainlib.tmp
 
-# CREATE the FEP-file
+		# Calculate the total charge
+		sed -n -r '/atoms/,/bonds/p' $ligname.lib > charges.tmp
+		awk '{total += $NF} END {print total}' charges.tmp > charge.tmp
+		charge=$( tail charge.tmp)
 
-	# Create FEP header
-	echo -e [FEP]'\n'states 1'\n'offset_name LIG'\n'[atoms] > FEP.header.tmp
+		# Put it together
+		echo -e *----------------'\n'{LIG}	! charge: $charge'\n' > libheader.tmp
+		cat libheader.tmp mainlib.tmp > Q.$ligname.CM1A.lib
 
-	# Get atom list from lib file
-    sed -i '1d; $d' charges.tmp    # Removes first and last line
-    awk '{ print $1, $1}' charges.tmp > columns.tmp
+		# CREATE the FEP-file
 
-	# Put it all together
-	cat FEP.header.tmp columns.tmp > $ligname.fep
-	
-# CLEAN all the TMP-files
+		# Create FEP header
+		echo -e [FEP]'\n'states 1'\n'offset_name LIG'\n'[atoms] > FEP.header.tmp
+
+		# Get atom list from lib file
+		sed -i '1d; $d' charges.tmp    # Removes first and last line
+		awk '{ print $1, $1}' charges.tmp > columns.tmp
+
+		# Put it all together
+		cat FEP.header.tmp columns.tmp > $ligname.fep
+
+		# CLEAN all the TMP-files
 		rm *.tmp
+	done
 
 # DONE

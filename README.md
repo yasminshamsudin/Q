@@ -8,3 +8,5 @@ Sample input files and scripts for running FEP and PMF simulations are also avai
 
 Note: The Q development can be followed here: https://github.com/qusers
 The version in this repository were used in published work by the Åqvist group at least until 2017. 
+
+This version of Q has been successfully compiled on the Rackham (UPPMAX) and Tetralith (NSC) clusters.

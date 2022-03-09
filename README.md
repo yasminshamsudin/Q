@@ -7,4 +7,4 @@ The scripts are provided "as is" and can be used for preparing protein and ligan
 Sample input files and scripts for running FEP and PMF simulations are also available.
 
 Note: The Q development can be followed here: https://github.com/qusers
-The version in this repository were used in the Åqvist group at least until 2017. 
+The version in this repository were used in published work by the Åqvist group at least until 2017. 
